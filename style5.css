@@ -9,8 +9,22 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
-  
+  .triangle {
+    position: relative;
+    animation-name: movetriangle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
   @keyframes moveCircle {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: calc(100vh - 100px);
+    }
+  }
+  @keyframes movetriangle {
     0% {
       top: 0;
     }
